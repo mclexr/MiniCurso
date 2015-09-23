@@ -1,0 +1,8 @@
+br\unip\minicurso\model\dao\PostagemDAO.class
+br\unip\minicurso\model\dao\DAO.class
+br\unip\minicurso\controller\UsuarioController.class
+br\unip\minicurso\model\entity\Postagem.class
+br\unip\minicurso\util\JPAUtil.class
+br\unip\minicurso\model\dao\AbstractDAO.class
+br\unip\minicurso\model\dao\UsuarioDAO.class
+br\unip\minicurso\model\entity\Usuario.class
