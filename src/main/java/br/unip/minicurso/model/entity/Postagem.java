@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -19,7 +20,8 @@ public class Postagem {
 	public static final String LISTAR_POR_USUARIO = "Postagem.listarPorUsuario";
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="postagem_seq")
+	@SequenceGenerator(name="postagem_seq", sequenceName="postagem_seq")
 	private Long id;
 	
 	@ManyToOne

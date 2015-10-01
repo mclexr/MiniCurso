@@ -6,15 +6,16 @@
 <class>br.unip.minicurso.model.entity.Postagem</class>
 
 		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
-
-			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/unipsocial" />
-			<property name="hibernate.connection.username" value="root" />
-			<property name="hibernate.connection.password" value="root" />
+			
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.url" value="jdbc:postgresql:/ec2-75-101-162-243.compute-1.amazonaws.com:5432/d508doc71ausqn" />
+			<property name="hibernate.connection.username" value="bcemerimkzduvp" />
+			<property name="hibernate.connection.password" value="EjIJP8epN1mzRCpNwUKloV59Mk" />
 
 		</properties>
 
